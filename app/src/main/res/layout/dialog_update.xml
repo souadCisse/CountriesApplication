@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+        <TextView
+            android:id="@+id/countryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textAlignment="center" />
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/countryPopulation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Population"/>
+
+    <EditText
+        android:id="@+id/countryCapital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Capital"/>
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mettre à jour"/>
+</LinearLayout>
+
